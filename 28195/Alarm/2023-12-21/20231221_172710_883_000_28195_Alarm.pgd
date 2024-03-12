@@ -1,0 +1,10 @@
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          21-12-2023 17:26:15.304  1  ,192,21-12-2023 17:26:15.304
+__AlarmValue,04-WaitBrake_Warn_Cwd  3  OPC CONDITION EVENT  "1"          21-12-2023 17:26:38.309  1  ,192,21-12-2023 17:26:38.309
+__AlarmValue,04-WaitBrake_Warn_Cwd  1  OPC CONDITION EVENT  "1"          21-12-2023 17:26:46.398  1  ,192,21-12-2023 17:26:46.398
+__AlarmValue,04-WaitBrake_Warn_Cwd  5  OPC CONDITION EVENT  "1"          21-12-2023 17:26:47.489  1  ,192,21-12-2023 17:26:47.489
+__AlarmValue,24-Horn  0  OPC SIMPLE EVENT  ""          21-12-2023 17:26:53.673  1  ,192,21-12-2023 17:26:53.673
+__AlarmValue,24-EndCycle  0  OPC SIMPLE EVENT  ""          21-12-2023 17:26:57.525  1  ,192,21-12-2023 17:26:57.525
+__AlarmValue,24-StartCycle  0  OPC SIMPLE EVENT  ""          21-12-2023 17:26:59.015  1  ,192,21-12-2023 17:26:59.015
+__AlarmValue,24-Dumping  0  OPC SIMPLE EVENT  ""          21-12-2023 17:26:59.015  1  ,192,21-12-2023 17:26:59.015
+__AlarmValue,24-Return  0  OPC SIMPLE EVENT  ""          21-12-2023 17:27:00.284  1  ,192,21-12-2023 17:27:00.284
+__AlarmValue,24-DigPrep  0  OPC SIMPLE EVENT  ""          21-12-2023 17:27:10.828  1  ,192,21-12-2023 17:27:10.828

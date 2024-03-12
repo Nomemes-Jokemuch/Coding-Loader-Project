@@ -1,0 +1,9 @@
+__AlarmValue,24-EndCycle  0  OPC SIMPLE EVENT  ""          21-12-2023 08:11:06.682  1  ,192,21-12-2023 08:11:06.682
+__AlarmValue,24-StartCycle  0  OPC SIMPLE EVENT  ""          21-12-2023 08:11:07.837  1  ,192,21-12-2023 08:11:07.837
+__AlarmValue,24-Dumping  0  OPC SIMPLE EVENT  ""          21-12-2023 08:11:07.837  1  ,192,21-12-2023 08:11:07.837
+__AlarmValue,24-Return  0  OPC SIMPLE EVENT  ""          21-12-2023 08:11:09.864  1  ,192,21-12-2023 08:11:09.864
+__AlarmValue,24-Horn  0  OPC SIMPLE EVENT  ""          21-12-2023 08:11:14.329  1  ,192,21-12-2023 08:11:14.329
+__AlarmValue,24-DigPrep  0  OPC SIMPLE EVENT  ""          21-12-2023 08:11:21.641  1  ,192,21-12-2023 08:11:21.641
+__AlarmValue,24-Dig  0  OPC SIMPLE EVENT  ""          21-12-2023 08:11:34.646  1  ,192,21-12-2023 08:11:34.646
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          21-12-2023 08:11:39.767  1  ,192,21-12-2023 08:11:39.767
+__AlarmValue,24-Swinging  0  OPC SIMPLE EVENT  ""          21-12-2023 08:11:47.902  1  ,192,21-12-2023 08:11:47.902
