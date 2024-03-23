@@ -1,0 +1,3 @@
+__AlarmValue,25-OnOffLogic_N  0  OPC SIMPLE EVENT  ""          17-03-2024 19:18:51.864  500  ,192,17-03-2024 19:18:51.864
+__AlarmValue,22-ManualStop  0  OPC SIMPLE EVENT  ""          17-03-2024 19:18:53.267  1  ,192,17-03-2024 19:18:53.267
+__AlarmValue,22-ManualStop  0  OPC SIMPLE EVENT  ""          17-03-2024 19:19:03.975  1  ,192,17-03-2024 19:19:03.975

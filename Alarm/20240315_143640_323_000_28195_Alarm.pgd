@@ -1,0 +1,3 @@
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          15-03-2024 14:35:54.666  1  ,192,15-03-2024 14:35:54.666
+__AlarmValue,24-Swinging  0  OPC SIMPLE EVENT  ""          15-03-2024 14:35:56.065  1  ,192,15-03-2024 14:35:56.065
+__AlarmValue,24-WaitingForTruck  0  OPC SIMPLE EVENT  ""          15-03-2024 14:35:58.767  1  ,192,15-03-2024 14:35:58.767

@@ -1,0 +1,3 @@
+__AlarmValue,24-WaitingForTruck  0  OPC SIMPLE EVENT  ""          15-03-2024 03:34:37.648  1  ,192,15-03-2024 03:34:37.648
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          15-03-2024 03:35:21.113  1  ,192,15-03-2024 03:35:21.113
+__AlarmValue,04-WaitBrake_Warn_Hst  3  OPC CONDITION EVENT  "1"          15-03-2024 03:35:26.239  1  ,192,15-03-2024 03:35:26.239

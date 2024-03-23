@@ -1,0 +1,11 @@
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          17-03-2024 14:39:46.233  1  ,192,17-03-2024 14:39:46.233
+__AlarmValue,24-DigPrep  0  OPC SIMPLE EVENT  ""          17-03-2024 14:39:58.788  1  ,192,17-03-2024 14:39:58.788
+__AlarmValue,24-Dig  0  OPC SIMPLE EVENT  ""          17-03-2024 14:39:59.893  1  ,192,17-03-2024 14:39:59.893
+__AlarmValue,24-Swinging  0  OPC SIMPLE EVENT  ""          17-03-2024 14:40:10.370  1  ,192,17-03-2024 14:40:10.370
+__AlarmValue,24-WaitingForTruck  0  OPC SIMPLE EVENT  ""          17-03-2024 14:40:33.280  1  ,192,17-03-2024 14:40:33.280
+__AlarmValue,24-Swinging  0  OPC SIMPLE EVENT  ""          17-03-2024 14:40:34.373  1  ,192,17-03-2024 14:40:34.373
+__AlarmValue,24-Horn  0  OPC SIMPLE EVENT  ""          17-03-2024 14:40:35.375  1  ,192,17-03-2024 14:40:35.375
+__AlarmValue,24-EndCycle  0  OPC SIMPLE EVENT  ""          17-03-2024 14:40:36.376  1  ,192,17-03-2024 14:40:36.376
+__AlarmValue,24-StartCycle  0  OPC SIMPLE EVENT  ""          17-03-2024 14:40:37.378  1  ,192,17-03-2024 14:40:37.378
+__AlarmValue,24-Dumping  0  OPC SIMPLE EVENT  ""          17-03-2024 14:40:38.380  1  ,192,17-03-2024 14:40:38.380
+__AlarmValue,24-Return  0  OPC SIMPLE EVENT  ""          17-03-2024 14:40:39.454  1  ,192,17-03-2024 14:40:39.454

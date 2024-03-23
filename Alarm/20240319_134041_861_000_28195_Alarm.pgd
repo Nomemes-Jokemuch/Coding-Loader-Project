@@ -1,0 +1,2 @@
+__AlarmValue,03-GrndFltReceptacles200VAC  3  OPC CONDITION EVENT  "1"          19-03-2024 13:40:33.359  100  ,192,19-03-2024 13:40:33.359
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          19-03-2024 13:40:36.829  1  ,192,19-03-2024 13:40:36.829

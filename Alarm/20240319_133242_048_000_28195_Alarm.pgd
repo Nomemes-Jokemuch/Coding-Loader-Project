@@ -1,0 +1,4 @@
+__AlarmValue,03-AirScrubPro_PLC_Node_Fault  1  OPC CONDITION EVENT  "1"          19-03-2024 13:31:44.376  100  ,192,19-03-2024 13:31:44.376
+__AlarmValue,03-AirScrubPro_PLC_Node_Fault  5  OPC CONDITION EVENT  "1"          19-03-2024 13:31:45.631  100  ,192,19-03-2024 13:31:45.631
+__AlarmValue,03-AirScrubPro_PLC_Node_Fault  3  OPC CONDITION EVENT  "1"          19-03-2024 13:31:50.135  100  ,192,19-03-2024 13:31:50.135
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          19-03-2024 13:32:36.678  1  ,192,19-03-2024 13:32:36.678

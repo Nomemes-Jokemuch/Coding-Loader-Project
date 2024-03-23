@@ -1,0 +1,4 @@
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          17-03-2024 16:12:52.437  1  ,192,17-03-2024 16:12:52.437
+__AlarmValue,24-Idle  0  OPC SIMPLE EVENT  ""          17-03-2024 16:13:21.542  1  ,192,17-03-2024 16:13:21.542
+__AlarmValue,25-cmdPplMode  0  OPC SIMPLE EVENT  ""          17-03-2024 16:13:22.586  1  ,192,17-03-2024 16:13:22.586
+__AlarmValue,23-RunninginPropelMode  0  OPC SIMPLE EVENT  ""          17-03-2024 16:13:24.430  1  ,192,17-03-2024 16:13:24.430

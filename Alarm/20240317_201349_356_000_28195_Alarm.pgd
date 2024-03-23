@@ -1,0 +1,5 @@
+__AlarmValue,04-Fault_Reset_Activated  3  OPC CONDITION EVENT  "1"          17-03-2024 20:12:58.654  100  ,192,17-03-2024 20:12:58.654
+__AlarmValue,04-Fault_Reset_Activated  1  OPC CONDITION EVENT  "1"          17-03-2024 20:12:59.667  100  ,192,17-03-2024 20:12:59.667
+__AlarmValue,04-Fault_Reset_Activated  5  OPC CONDITION EVENT  "1"          17-03-2024 20:13:01.166  100  ,192,17-03-2024 20:13:01.166
+__AlarmValue,22-ManualStop  0  OPC SIMPLE EVENT  ""          17-03-2024 20:13:06.297  1  ,192,17-03-2024 20:13:06.297
+__AlarmValue,03-GrndFltReceptacles200VAC  3  OPC CONDITION EVENT  "1"          17-03-2024 20:13:48.154  100  ,192,17-03-2024 20:13:48.154

@@ -1,0 +1,9 @@
+__AlarmValue,04-U74D01F1  3  OPC CONDITION EVENT  "1"          17-03-2024 19:41:51.902  1  ,192,17-03-2024 19:41:51.902
+__AlarmValue,22-ManualStop  0  OPC SIMPLE EVENT  ""          17-03-2024 19:42:04.399  1  ,192,17-03-2024 19:42:04.399
+__AlarmValue,24-Horn  0  OPC SIMPLE EVENT  ""          17-03-2024 19:42:06.818  1  ,192,17-03-2024 19:42:06.818
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          17-03-2024 19:42:16.252  1  ,192,17-03-2024 19:42:16.252
+__AlarmValue,23-RunninginDigMode  0  OPC SIMPLE EVENT  ""          17-03-2024 19:42:17.428  1  ,192,17-03-2024 19:42:17.428
+__AlarmValue,24-Dig  0  OPC SIMPLE EVENT  ""          17-03-2024 19:42:17.428  1  ,192,17-03-2024 19:42:17.428
+__AlarmValue,24-Swinging  0  OPC SIMPLE EVENT  ""          17-03-2024 19:42:17.428  1  ,192,17-03-2024 19:42:17.428
+__AlarmValue,25-cmdPplMode  0  OPC SIMPLE EVENT  ""          17-03-2024 19:42:25.517  1  ,192,17-03-2024 19:42:25.517
+__AlarmValue,23-RunninginPropelMode  0  OPC SIMPLE EVENT  ""          17-03-2024 19:42:28.001  1  ,192,17-03-2024 19:42:28.001

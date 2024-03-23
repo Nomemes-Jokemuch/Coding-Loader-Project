@@ -1,0 +1,12 @@
+__AlarmValue,24-EndCycle  0  OPC SIMPLE EVENT  ""          14-03-2024 11:54:43.462  1  ,192,14-03-2024 11:54:43.462
+__AlarmValue,24-StartCycle  0  OPC SIMPLE EVENT  ""          14-03-2024 11:54:44.569  1  ,192,14-03-2024 11:54:44.569
+__AlarmValue,24-Dumping  0  OPC SIMPLE EVENT  ""          14-03-2024 11:54:45.573  1  ,192,14-03-2024 11:54:45.573
+__AlarmValue,24-Return  0  OPC SIMPLE EVENT  ""          14-03-2024 11:54:46.724  1  ,192,14-03-2024 11:54:46.724
+__AlarmValue,24-DigPrep  0  OPC SIMPLE EVENT  ""          14-03-2024 11:54:58.925  1  ,192,14-03-2024 11:54:58.925
+__AlarmValue,24-Dig  0  OPC SIMPLE EVENT  ""          14-03-2024 11:55:02.580  1  ,192,14-03-2024 11:55:02.580
+__AlarmValue,24-Swinging  0  OPC SIMPLE EVENT  ""          14-03-2024 11:55:14.967  1  ,192,14-03-2024 11:55:14.967
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          14-03-2024 11:55:23.421  1  ,192,14-03-2024 11:55:23.421
+__AlarmValue,24-EndCycle  0  OPC SIMPLE EVENT  ""          14-03-2024 11:55:24.665  1  ,192,14-03-2024 11:55:24.665
+__AlarmValue,24-StartCycle  0  OPC SIMPLE EVENT  ""          14-03-2024 11:55:24.665  1  ,192,14-03-2024 11:55:24.665
+__AlarmValue,24-Dumping  0  OPC SIMPLE EVENT  ""          14-03-2024 11:55:25.672  1  ,192,14-03-2024 11:55:25.672
+__AlarmValue,24-Return  0  OPC SIMPLE EVENT  ""          14-03-2024 11:55:26.962  1  ,192,14-03-2024 11:55:26.962

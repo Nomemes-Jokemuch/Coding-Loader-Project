@@ -1,0 +1,11 @@
+__AlarmValue,25-cmdPplMode_N  0  OPC SIMPLE EVENT  ""          17-03-2024 16:13:48.256  1  ,192,17-03-2024 16:13:48.256
+__AlarmValue,23-RunninginDigMode  0  OPC SIMPLE EVENT  ""          17-03-2024 16:13:51.386  1  ,192,17-03-2024 16:13:51.386
+__AlarmValue,24-Idle  0  OPC SIMPLE EVENT  ""          17-03-2024 16:13:52.475  1  ,192,17-03-2024 16:13:52.475
+__AlarmValue,24-Dig  0  OPC SIMPLE EVENT  ""          17-03-2024 16:13:52.475  1  ,192,17-03-2024 16:13:52.475
+__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          17-03-2024 16:13:52.475  1  ,192,17-03-2024 16:13:52.475
+__AlarmValue,24-Swinging  0  OPC SIMPLE EVENT  ""          17-03-2024 16:14:16.803  1  ,192,17-03-2024 16:14:16.803
+__AlarmValue,24-Horn  0  OPC SIMPLE EVENT  ""          17-03-2024 16:14:35.694  1  ,192,17-03-2024 16:14:35.694
+__AlarmValue,24-EndCycle  0  OPC SIMPLE EVENT  ""          17-03-2024 16:14:36.758  1  ,192,17-03-2024 16:14:36.758
+__AlarmValue,24-StartCycle  0  OPC SIMPLE EVENT  ""          17-03-2024 16:14:37.760  1  ,192,17-03-2024 16:14:37.760
+__AlarmValue,24-Dumping  0  OPC SIMPLE EVENT  ""          17-03-2024 16:14:37.760  1  ,192,17-03-2024 16:14:37.760
+__AlarmValue,24-Return  0  OPC SIMPLE EVENT  ""          17-03-2024 16:14:39.424  1  ,192,17-03-2024 16:14:39.424
