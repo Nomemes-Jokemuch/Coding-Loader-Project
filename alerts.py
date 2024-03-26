@@ -7,7 +7,7 @@ search_string_list = ["04"]
 
 alerts_list = []
 
-report_test_path = "C:\\Users\\USER\\Documents\\GitHub\\Coding-Loaders-Project\\Alarm\\20240314_171213_563_000_28195_Alarm.pgd"
+
 
 
 def report_sorting(report_path: str, date_sorting: str):
@@ -25,21 +25,21 @@ def get_rid_of_space(string):
     return string[: string.find("          ")]
 
 
-def alerts(folder_path):
-    if os.path.exists(folder_path):
-        for file_name in os.listdir(folder_path):
-            if os.path.isfile(os.path.join(folder_path, file_name)):
-                with open(os.path.join(folder_path, file_name), "r") as file:
-                    file_content = file.read()
-                    for string in file_content.splitlines():
-                        string = get_rid_of_space(string)
-                        for search_string in search_string_list:
-                            if search_string in string:
-                                if string in [i[0] for i in alerts_list]:
-                                    for alert in alerts_list:
-                                        if string == alert[0]:
-                                            alert[1] += 1
-                                else:
-                                    alerts_list.append([string, 1])
-    for i in alerts_list:
-        return i
+
+for file_name in os.listdir('Alarm'):
+    with open(os.path.join('Alarm', file_name), "r") as file:
+        file_content = file.read()
+        for string in file_content.splitlines():
+            string = get_rid_of_space(string)
+            for search_string in search_string_list:
+                if search_string in string:
+                    if string in [i[0] for i in alerts_list]:
+                        for alert in alerts_list:
+                            if string == alert[0]:
+                                alert[1] += 1
+                    else:
+                        alerts_list.append([string, 1])
+
+for i in alerts_list:
+    print(i)
+
