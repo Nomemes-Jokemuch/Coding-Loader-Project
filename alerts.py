@@ -3,7 +3,8 @@ from pathlib import Path
 from funcs import get_rid_of_space
 
 path = "Alarm"
-numero = ["04"]
+numeros = ["04"]
+date = '20240316'
 
 def report_sorting(report_path: str, date_sorting: str):
     file_name = Path(report_path).stem
@@ -34,4 +35,7 @@ def alert_list(folder_path, search_string_list, date_sorting):
                             alerts_list.append([string, 1])
 
     return alerts_list
+
+
+print(alert_list(path, numeros, date))
 
