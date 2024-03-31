@@ -17,7 +17,7 @@ def report_sorting(report_path: str, date_sorting: str):
         hhmmss = file_name[9:15]
         if yyyymmdd == date_sorting and (80000 <= int(hhmmss) <= 235959):
             return 1
-        elif (yyyymmdd[0:6] + (int(yyyymmdd[7:8]) + 1)) == date_sorting and (0 <= int(hhmmss) <= 7000):
+        elif (yyyymmdd[0:6] + (int(yyyymmdd[7:8]) + 1)) == date_sorting and (0 <= int(hhmmss) <= 7959):
             return 1
 
 
