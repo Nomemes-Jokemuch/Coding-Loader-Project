@@ -1,8 +1,0 @@
-__AlarmValue,04-Fault_Reset_Activated  3  OPC CONDITION EVENT  "1"          21-12-2023 15:14:17.620  100  ,192,21-12-2023 15:14:17.620
-__AlarmValue,04-Fault_Reset_Activated  1  OPC CONDITION EVENT  "1"          21-12-2023 15:14:18.112  100  ,192,21-12-2023 15:14:18.112
-__AlarmValue,04-Fault_Reset_Activated  5  OPC CONDITION EVENT  "1"          21-12-2023 15:14:19.119  100  ,192,21-12-2023 15:14:19.119
-__AlarmValue,25-OnOffLogic  0  OPC SIMPLE EVENT  ""          21-12-2023 15:14:19.119  500  ,192,21-12-2023 15:14:19.119
-__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          21-12-2023 15:14:48.318  1  ,192,21-12-2023 15:14:48.318
-__AlarmValue,25-cmdPplMode  0  OPC SIMPLE EVENT  ""          21-12-2023 15:14:49.680  1  ,192,21-12-2023 15:14:49.680
-__AlarmValue,23-RunninginDigMode  0  OPC SIMPLE EVENT  ""          21-12-2023 15:14:49.680  1  ,192,21-12-2023 15:14:49.680
-__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          21-12-2023 15:15:06.690  1  ,192,21-12-2023 15:15:06.690

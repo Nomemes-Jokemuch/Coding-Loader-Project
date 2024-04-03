@@ -1,1 +1,0 @@
-This document is created to prevent issues with the zipping process. 

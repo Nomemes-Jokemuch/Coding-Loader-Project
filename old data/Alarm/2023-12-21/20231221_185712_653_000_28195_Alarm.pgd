@@ -1,5 +1,0 @@
-__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          21-12-2023 18:56:20.763  1  ,192,21-12-2023 18:56:20.763
-__AlarmValue,24-Swinging  0  OPC SIMPLE EVENT  ""          21-12-2023 18:56:55.136  1  ,192,21-12-2023 18:56:55.136
-__AlarmValue,24-Return  0  OPC SIMPLE EVENT  ""          21-12-2023 18:57:02.859  1  ,192,21-12-2023 18:57:02.859
-__AlarmValue,24-DigPrep  0  OPC SIMPLE EVENT  ""          21-12-2023 18:57:06.736  1  ,192,21-12-2023 18:57:06.736
-__AlarmValue,24-Dig  0  OPC SIMPLE EVENT  ""          21-12-2023 18:57:09.864  1  ,192,21-12-2023 18:57:09.864
