@@ -1,9 +1,0 @@
-__AlarmValue,04-WaitBrake_Warn_Hst  3  OPC CONDITION EVENT  "1"          19-03-2024 01:36:29.583  1  ,192,19-03-2024 01:36:29.583
-__AlarmValue,04-WaitBrake_Warn_Cwd  3  OPC CONDITION EVENT  "1"          19-03-2024 01:36:30.731  1  ,192,19-03-2024 01:36:30.731
-__AlarmValue,04-WaitBrake_Warn_Hst  1  OPC CONDITION EVENT  "1"          19-03-2024 01:36:36.332  1  ,192,19-03-2024 01:36:36.332
-__AlarmValue,04-WaitBrake_Warn_Hst  5  OPC CONDITION EVENT  "1"          19-03-2024 01:36:37.748  1  ,192,19-03-2024 01:36:37.748
-__AlarmValue,04-WaitBrake_Warn_Cwd  1  OPC CONDITION EVENT  "1"          19-03-2024 01:36:37.748  1  ,192,19-03-2024 01:36:37.748
-__AlarmValue,04-WaitBrake_Warn_Cwd  5  OPC CONDITION EVENT  "1"          19-03-2024 01:36:37.748  1  ,192,19-03-2024 01:36:37.748
-__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          19-03-2024 01:36:53.464  1  ,192,19-03-2024 01:36:53.464
-__AlarmValue,24-Dig  0  OPC SIMPLE EVENT  ""          19-03-2024 01:37:02.162  1  ,192,19-03-2024 01:37:02.162
-__AlarmValue,24-Swinging  0  OPC SIMPLE EVENT  ""          19-03-2024 01:37:07.069  1  ,192,19-03-2024 01:37:07.069

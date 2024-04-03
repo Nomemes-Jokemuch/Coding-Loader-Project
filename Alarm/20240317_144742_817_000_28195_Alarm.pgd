@@ -1,4 +1,0 @@
-__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          17-03-2024 14:46:46.193  1  ,192,17-03-2024 14:46:46.193
-__AlarmValue,04-WaitBrake_Warn_Cwd  3  OPC CONDITION EVENT  "1"          17-03-2024 14:47:32.257  1  ,192,17-03-2024 14:47:32.257
-__AlarmValue,24-Swinging  0  OPC SIMPLE EVENT  ""          17-03-2024 14:47:39.997  1  ,192,17-03-2024 14:47:39.997
-__AlarmValue,04-WaitBrake_Warn_Cwd  1  OPC CONDITION EVENT  "1"          17-03-2024 14:47:42.340  1  ,192,17-03-2024 14:47:42.340

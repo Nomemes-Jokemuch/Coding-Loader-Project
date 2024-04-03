@@ -1,5 +1,0 @@
-__AlarmValue,24-Dig  0  OPC SIMPLE EVENT  ""          18-03-2024 23:44:37.093  1  ,192,18-03-2024 23:44:37.093
-__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          18-03-2024 23:44:46.418  1  ,192,18-03-2024 23:44:46.418
-__AlarmValue,24-Horn  0  OPC SIMPLE EVENT  ""          18-03-2024 23:45:20.706  1  ,192,18-03-2024 23:45:20.706
-__AlarmValue,24-StartCycle  0  OPC SIMPLE EVENT  ""          18-03-2024 23:45:21.993  1  ,192,18-03-2024 23:45:21.993
-__AlarmValue,24-Dumping  0  OPC SIMPLE EVENT  ""          18-03-2024 23:45:21.993  1  ,192,18-03-2024 23:45:21.993

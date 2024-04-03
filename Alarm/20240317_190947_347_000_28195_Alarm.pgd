@@ -1,6 +1,0 @@
-__AlarmValue,22-StartedInRun  0  OPC SIMPLE EVENT  ""          17-03-2024 19:09:02.724  1  ,192,17-03-2024 19:09:02.724
-__AlarmValue,04-WaitBrake_Warn_Cwd  3  OPC CONDITION EVENT  "1"          17-03-2024 19:09:37.191  1  ,192,17-03-2024 19:09:37.191
-__AlarmValue,24-Return  0  OPC SIMPLE EVENT  ""          17-03-2024 19:09:43.726  1  ,192,17-03-2024 19:09:43.726
-__AlarmValue,04-WaitBrake_Warn_Cwd  1  OPC CONDITION EVENT  "1"          17-03-2024 19:09:45.174  1  ,192,17-03-2024 19:09:45.174
-__AlarmValue,04-WaitBrake_Warn_Cwd  5  OPC CONDITION EVENT  "1"          17-03-2024 19:09:46.213  1  ,192,17-03-2024 19:09:46.213
-__AlarmValue,24-Idle  0  OPC SIMPLE EVENT  ""          17-03-2024 19:09:46.213  1  ,192,17-03-2024 19:09:46.213
