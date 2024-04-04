@@ -41,7 +41,7 @@ def alert_list(folder_path, search_string_list, date_sorting, sort_date=True, fi
                 for search_string in search_string_list:
                     if search_string in string:
                         if string in [i[0] for i in alerts_list]:
-                            for alert in alerts_list:
+                            for alert in alerts_list: #оптимизировать
                                 if string == alert[0]:
                                     alert[1] += 1
                                     if file_names:
