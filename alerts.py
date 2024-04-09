@@ -51,7 +51,9 @@ def alert_list(folder_path, search_string_list, date_sorting, sort_date=True, fi
                             alerts_list.append([string, 1, [file_name]])
                         else:
                             alerts_list.append([string, 1])
-
-    return alerts_list
+    if alert_list == "": #нужно придумать условие для проверке
+        return "No alerts"
+    else:
+        return alerts_list
 
 
