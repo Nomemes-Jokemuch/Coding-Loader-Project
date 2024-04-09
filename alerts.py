@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 import datetime
-
+ 
 def report_sorting(report_path: str, date_sorting: str):
     d_time = datetime.timedelta(days=1)
     DateSorting = datetime.date.fromisoformat(date_sorting)
