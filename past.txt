@@ -1,0 +1,40 @@
+#Пусть лежит на всякий случай.
+def alert_list(folder_path, search_string_list, date_sorting, sort_date=True, file_names=False):
+    alerts_list = []
+
+    for file_name in os.listdir(folder_path):
+        with open(os.path.join(folder_path, file_name), "r") as file:
+            if (
+                report_sorting(os.path.abspath(file.name), date_sorting) == 0
+                and sort_date
+            ):
+                continue
+            file_content = file.read()
+            for string in file_content.splitlines():
+                string = string[: string.find("          ")]
+                for search_string in search_string_list:
+                    if search_string in string:
+                        if string in [i[0] for i in alerts_list]:
+                            for alert in alerts_list: #оптимизировать
+                                if string == alert[0]:
+                                    alert[1] += 1
+                                    if file_names:
+                                        alert[2].append(file_name)
+                        elif file_names:
+                            alerts_list.append([string, 1, [file_name]])
+                        else:
+                            alerts_list.append([string, 1])
+    if alert_list == "": #нужно придумать условие для проверке
+        return "No alerts"
+    else:
+        return alerts_list
+
+def print_alert_list(folder_path, search_string_list, date_sorting, sort_date=True, file_names=False):
+    if file_names:
+        for i in alert_list(folder_path, search_string_list, date_sorting, sort_date, file_names):
+            for j in i[2]:
+                print(j)
+        print(len(i[2]))
+    else:
+        for i in alert_list(folder_path, search_string_list, date_sorting, sort_date, file_names):
+            print(i[0], i[1])

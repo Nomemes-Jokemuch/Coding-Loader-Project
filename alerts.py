@@ -2,16 +2,6 @@ import os
 from pathlib import Path
 import datetime
 
-def print_alert_list(folder_path, search_string_list, date_sorting, sort_date=True, file_names=False):
-    if file_names:
-        for i in alert_list(folder_path, search_string_list, date_sorting, sort_date, file_names):
-            for j in i[2]:
-                print(j)
-        print(len(i[2]))
-    else:
-        for i in alert_list(folder_path, search_string_list, date_sorting, sort_date, file_names):
-            print(i[0], i[1])
-
 def report_sorting(report_path: str, date_sorting: str):
     d_time = datetime.timedelta(days=1)
     DateSorting = datetime.date.fromisoformat(date_sorting)
@@ -25,9 +15,11 @@ def report_sorting(report_path: str, date_sorting: str):
     else:
         return 0
 
-def alert_list(folder_path, search_string_list, date_sorting, sort_date=True, file_names=False):
-    alerts_list = []
-
+def alerts_dict(
+    folder_path, search_string_list, date_sorting, sort_date=True, file_names=False
+):
+    alert_dict = {}
+    file_list = []
     for file_name in os.listdir(folder_path):
         with open(os.path.join(folder_path, file_name), "r") as file:
             if (
@@ -37,23 +29,19 @@ def alert_list(folder_path, search_string_list, date_sorting, sort_date=True, fi
                 continue
             file_content = file.read()
             for string in file_content.splitlines():
-                string = string[: string.find("          ")]
+                string = string[: string.find("  OPC")]
                 for search_string in search_string_list:
                     if search_string in string:
-                        if string in [i[0] for i in alerts_list]:
-                            for alert in alerts_list: #оптимизировать
-                                if string == alert[0]:
-                                    alert[1] += 1
-                                    if file_names:
-                                        alert[2].append(file_name)
-                                    
-                        elif file_names:
-                            alerts_list.append([string, 1, [file_name]])
+                        if string in alert_dict:
+                            alert_dict[string] += 1
+                            if file_names:
+                                file_list.append(file_name)
                         else:
-                            alerts_list.append([string, 1])
-    if alert_list == "": #нужно придумать условие для проверке
-        return "No alerts"
-    else:
-        return alerts_list
+                            alert_dict[string] = 1
+                            if file_names:
+                                file_list.append(file_name)
+    print('\n'.join(file_list))
+    return alert_dict
+
 
 
