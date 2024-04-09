@@ -4,13 +4,13 @@ import datetime
 
 def print_alert_list(folder_path, search_string_list, date_sorting, sort_date=True, file_names=False):
     if file_names:
-        for i in alert_list(folder_path, search_string_list, date_sorting, sort_date, file_names):
-            for j in i[2]:
-                print(j)
-        print(len(i[2]))
+        for alert in alert_list(folder_path, search_string_list, date_sorting, sort_date, file_names):
+            for alert_path in alert[2]:
+                print(alert_path)
+        print(len(alert[2]))
     else:
-        for i in alert_list(folder_path, search_string_list, date_sorting, sort_date, file_names):
-            print(i[0], i[1])
+        for alert in alert_list(folder_path, search_string_list, date_sorting, sort_date, file_names):
+            print(alert[0], alert[1])
 
 def report_sorting(report_path: str, date_sorting: str):
     file_name = Path(report_path).stem
