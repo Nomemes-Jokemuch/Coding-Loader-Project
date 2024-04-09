@@ -13,17 +13,14 @@ def print_alert_list(folder_path, search_string_list, date_sorting, sort_date=Tr
             print(i[0], i[1])
 
 def report_sorting(report_path: str, date_sorting: str):
-    d_time = datetime.timedelta(days=1)
-    DateSorting = datetime.date.fromisoformat(date_sorting)
     file_name = Path(report_path).stem
-    yyyymmdd = datetime.date.fromisoformat(file_name[0:8])
-    hhmmss = file_name[9:15]
-    if yyyymmdd == DateSorting and (80000 <= int(hhmmss) <= 235959):
+    left_border = datetime.datetime(int(date_sorting[0:4]), int(date_sorting[4:6]), int(date_sorting[6:8]), 8)
+    right_border = datetime.datetime(int(date_sorting[0:4]), int(date_sorting[4:6]), int(date_sorting[6:8]) + 1, 7, 59, 59)
+    date = datetime.datetime(int(file_name[0:4]), int(file_name[4:6]), int(file_name[6:8]), int(file_name[9:11]), int(file_name[11:13]), int(file_name[13:15]))
+
+    if left_border <= date <= right_border:
         return 1
-    elif (yyyymmdd - d_time) == DateSorting and (0 <= int(hhmmss) <= 75959):
-        return 1
-    else:
-        return 0
+    return 0
 
 def alert_list(folder_path, search_string_list, date_sorting, sort_date=True, file_names=False):
     alerts_list = []
