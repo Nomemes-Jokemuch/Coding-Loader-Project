@@ -1,13 +1,12 @@
 from alerts import alert_list, print_alert_list
 import os
 
-path = "C:\\Users\\egor1\\Documents\\loaders_data\\Alarm"
-numeros = ["04-RIGHTLADDERDOWN  1",]
+path_1 = "C:\\Users\\egor1\\Documents\\loaders_data\\Alarm"
+path_2 = "C:\\Users\\USER\\Desktop\\240320_28195\\Alarm"
+
+numeros = ["04-U74D01F1"]
 date = "20240317"
 
-#os.system('cls')
+os.system("cls")
 
-print_alert_list(path, numeros, date, True, True)
-
-
-
+print_alert_list(path_2, numeros, date, True, False)
