@@ -73,6 +73,26 @@ def alerts_dict(
     return alert_dict
 
 
+def average_alarm_value(alarm_dict):
+    new_dict = {'name': str(alarm_dict['name'])[:-16]}
+    alarm_types = {}
+    alarm_counts = {}
+    
+    for key, value in alarm_dict.items():
+        if key != 'name':
+            alarm_type = key.split(',')[1].split()[0]
+            if alarm_type not in alarm_types:
+                alarm_types[alarm_type] = []
+            alarm_types[alarm_type].append(value)
+    
+    for alarm_type, counts in alarm_types.items():
+        alarm_counts[alarm_type] = int(sum(counts) / len(counts))
+    
+    for alarm_type, average_count in alarm_counts.items():
+        new_dict[alarm_type] = average_count
+    
+    return new_dict
+
 def sub_alerts_dict(
     folder_path, search_string_list, date_sorting, sort_date=True, file_names=False
 ):
@@ -98,6 +118,8 @@ def sub_alerts_dict(
                             if file_names:
                                 alert_dict["name"] = file_name
             if alert_dict["name"] != "0":
-                print(alert_dict)
+                with open ("alerts_by_minutes.txt", "a") as file:
+                    file.write(str(average_alarm_value(alert_dict))+"\n")
+                #print(alert_dict)
                 alert_dict = {"name": "0"}
     return 
