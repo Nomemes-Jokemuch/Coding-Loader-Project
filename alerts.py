@@ -15,16 +15,6 @@ def report_sorting(report_path: str, date_sorting: str):
     else:
         return 0
 
-def test1(folder_path):
-    files = os.listdir(folder_path)
-    for index, file_name in enumerate(files):
-        file_dict = {}
-        file_path = os.path.join(folder_path, file_name)
-        with open(file_path, "r") as file:
-            file_dict[file_name] = index
-        print(file_dict)
-        file_dict.clear()
-
 def report_sorting_II(report_path: str, date_sorting: str):
     d_time = datetime.timedelta(days=1)
     DateSorting = datetime.date.fromisoformat(date_sorting)
@@ -38,11 +28,6 @@ def report_sorting_II(report_path: str, date_sorting: str):
     else:
         return 0
 
-def number_alert_sort(dictionary):
-    values = {key: value for key, value in dictionary.items()}
-    sorted_types = sorted(values.keys(), key=lambda x: int(x.split()[-1]))
-    values_list = [values[key] for key in sorted_types]
-    return values_list
 
 def alerts_dict(
     folder_path, search_string_list, date_sorting, sort_date=True, file_names=False
@@ -51,10 +36,8 @@ def alerts_dict(
     file_list = []
     for file_name in os.listdir(folder_path):
         with open(os.path.join(folder_path, file_name), "r") as file:
-            if (
-                report_sorting(os.path.abspath(file.name), date_sorting) == 0
-                and sort_date
-            ):
+            if (report_sorting(os.path.abspath(file.name), date_sorting) == 0
+                and sort_date):
                 continue
             file_content = file.read()
             for string in file_content.splitlines():
