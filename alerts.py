@@ -15,20 +15,6 @@ def report_sorting(report_path: str, date_sorting: str):
     else:
         return 0
 
-def report_sorting_II(report_path: str, date_sorting: str):
-    d_time = datetime.timedelta(days=1)
-    DateSorting = datetime.date.fromisoformat(date_sorting)
-    file_name = Path(report_path).stem
-    yyyymmdd = datetime.date.fromisoformat(file_name[0:8])
-    hhmmss = file_name[9:15]
-    if yyyymmdd == DateSorting and (80000 <= int(hhmmss) <= 235959):
-        return 1
-    elif (yyyymmdd - d_time) == DateSorting and (0 <= int(hhmmss) <= 75959):
-        return 1
-    else:
-        return 0
-
-
 def alerts_dict(
     folder_path, search_string_list, date_sorting, sort_date=True, file_names=False
 ):
@@ -54,7 +40,6 @@ def alerts_dict(
                                 file_list.append(file_name)
     print('\n'.join(file_list))
     return alert_dict
-
 
 def average_alarm_value(alarm_dict):
     new_dict = {'name': str(alarm_dict['name'])[:-16]}
