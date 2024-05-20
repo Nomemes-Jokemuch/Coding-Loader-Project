@@ -1,8 +1,11 @@
 import polars as pl
 import re
 import os
-from polars_table import AlarmsDF as AlarmsDF
+#from polars_table import AlarmsDF as AlarmsDF
 
+AlarmsDFpath = "AlarmsDF.parquet"
+
+AlarmsDF = pl.read_parquet(AlarmsDFpath)
 
 path = "C:\\loaders project\\240320_28195\\Alarm"
 path_file1 = "C:\\loaders project\\240320_28195\\Alarm\\20240316_015754_173_000_28195_Alarm.pgd"
@@ -73,18 +76,24 @@ def mergeParquets(folder_path):
     for file_name in os.listdir(folder_path):
         with open(os.path.join(folder_path, file_name), "r") as file:
             pgd_to_cvs_parquet(os.path.abspath(file.name))
-            #df = df1.vstack(df2)
+            try:
+                AlarmsDF = AlarmsDF.vstack(refactoring_temp_parquet(temp_parquet))
+            except:
+                print(file.name)
+    with open(AlarmsDFpath, "w") as f:
+        AlarmsDF.write_parquet(f)
+    AlarmsDF = pl.read_parquet(AlarmsDFpath)
+    print(AlarmsDF)
 
-#mergeParquets(path)
+
+mergeParquets(path)
 
 #pgd_to_cvs_parquet(path_file2)
 
 #print(refactoring_temp_parquet(temp_parquet))
 
+#AlarmsDF = AlarmsDF.vstack(refactoring_temp_parquet(temp_parquet))
+
+#AlarmsDF.write_parquet(AlarmsDF)
+
 #print(AlarmsDF)
-
-AlarmsDF = AlarmsDF.vstack(refactoring_temp_parquet(temp_parquet))
-
-AlarmsDF.write_parquet(AlarmsDF)
-
-print(AlarmsDF)
