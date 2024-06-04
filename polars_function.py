@@ -1,11 +1,8 @@
 import polars as pl
 import re
 import os
-#from polars_table import AlarmsDF as AlarmsDF
+from polars_table import AlarmsDF,AlarmsDFpath,AlarmsMergeDFpath
 
-AlarmsDFpath = "AlarmsDF.parquet"
-
-AlarmsDF = pl.read_parquet(AlarmsDFpath)
 
 path = "C:\\loaders project\\240320_28195\\Alarm"
 path_file1 = "C:\\loaders project\\240320_28195\\Alarm\\20240316_015754_173_000_28195_Alarm.pgd"
@@ -13,13 +10,6 @@ path_file2 = "C:\\loaders project\\240320_28195\\Alarm\\20240319_152144_935_000_
 
 temp_cvs = "convert_files\\pgd_to_cvs_convert.cvs"
 temp_parquet = "convert_files\\cvs_to_parquet_convert.parquet"
-
-""" 
-Егор, тебе надо понять как работает эта штука (string_refactoring) сделанная gpt
-И написать внятное описание как это работает для нас всех
-Работа со строкам тонкая штука
-По нужде может потребоваться доработать, т.к. оно может охватывать не все ситуации
-"""
 
 def string_refactoring(input_string : str): 
     input_string = re.sub(r"^__AlarmValue,", "", input_string)
@@ -30,8 +20,6 @@ def string_refactoring(input_string : str):
     input_string = re.sub(r"(\d{2}-\d{2}-\d{4})\s+(\d{2}:\d{2}:\d{2}\.\d+)", r"\1,\2", input_string)
     output_string = re.sub(r"(\d{4}),(\d{2}:\d{2}:\d{2}\.\d+)\s+(\d+).+", r"\1,\2,\3", input_string)
     return output_string
-
-#print(string_refactoring())
 
 def pgd_to_cvs_parquet(path : str):
     new_lines = []
@@ -78,22 +66,18 @@ def mergeParquets(folder_path):
             pgd_to_cvs_parquet(os.path.abspath(file.name))
             try:
                 AlarmsDF = AlarmsDF.vstack(refactoring_temp_parquet(temp_parquet))
+                AlarmsDF.write_parquet(AlarmsMergeDFpath) #Как-то нужно ускорить
             except:
-                print(file.name)
-    with open(AlarmsDFpath, "w") as f:
-        AlarmsDF.write_parquet(f)
-    AlarmsDF = pl.read_parquet(AlarmsDFpath)
-    print(AlarmsDF)
+                with open("error.txt", "w") as err:
+                    err.write(file.name+"\n")
+                    print(file.name)
+    print("End")
 
 
 mergeParquets(path)
 
 #pgd_to_cvs_parquet(path_file2)
 
-#print(refactoring_temp_parquet(temp_parquet))
-
 #AlarmsDF = AlarmsDF.vstack(refactoring_temp_parquet(temp_parquet))
-
-#AlarmsDF.write_parquet(AlarmsDF)
 
 #print(AlarmsDF)

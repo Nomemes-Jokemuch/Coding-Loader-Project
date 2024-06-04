@@ -20,12 +20,4 @@ alerts = [
 ]
 date = "20240318"
 
-dict = alerts_dict(path, alerts, date, True, False)
 
-# print(test1(path))
-
-# print(dict)
-
-sub_alerts_dict(path, alerts, date, True, True)
-
-# print(daily_report(date, dict))
